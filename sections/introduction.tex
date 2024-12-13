@@ -1,0 +1,66 @@
+An application’s architecture is continually refactored to accommodate the shifting needs of its users \cite{}. This dynamism requires
+developers to collaboratively re-design the application’s compo-
+nents \cite{}, using shared application-specific expertise to design
+cost-effective solutions. Collaborative refactoring and design skills
+are critically important in industry \cite{}, and entire development
+paradigms like Agile are founded on effective collaborative design
+principles.
+Yet we lack a practical method to teach high-level collaborative
+design skills \cite{}. While classroom-industry partnerships
+provide some practice \cite{}, the months of organizing and semesters
+of execution limit their repeatability and scalability. Furthermore,
+these partnerships often prioritize solitary implementation, provid-
+ing few opportunities to practice collaborative design.
+
+
+
+We draw on frameworks of serious play and values at play (VAP)
+to propose an activity to address this gap \cite{}. Serious play refers
+to the use of game-based methods to achieve serious, educational
+outcomes. Researchers have shown that serious play can improve
+motivation, foster collaboration, and enhance problem-solving skills
+among students \cite{}. VAP brings attention to the social values
+demonstrated through play and may enable teaching interpersonal
+skills in conjunction with serious play.
+
+Professional software design practice requires both technical re-
+design competencies and interpersonal skills like joining constructive discussion, active listening, and intellectual humility \cite{}. We
+have designed an activity based on an analog prototype to directly
+teach collaborative design and facilitate constructive discussion.
+We began by running an analog prototype of the activity in
+which a guest developer first presented a sketch of their applica-
+tion, then directed teams of students to redesign a small component
+without writing code. Teams brainstormed and refined solutions,
+while the developer pointed out where solutions might fail or be
+impractically expensive. Initial results were promising, with stu-
+dents and instructors reporting high satisfaction. Unfortunately,
+this manual intervention suffers from three severe limitations: ap-
+plication overviews are difficult to create, guest developers are rare,
+and problem-solving without an interactive system is difficult for
+Students.
+
+We propose a new system, the LLM-managed application overview,
+to address the prototype’s limitations. From an instructor prompt,
+the system generates an overview represented in class-responsibility-
+collaborator cards. A design aid from Agile, these cards are optimized to comprehend and wrangle an application’s architectural details in a deck of simple plaintext flashcards without code \cite{}.
+To re-capture the real-world complexity of a codebase, our system enhances each card with an emulation of common code metrics \cite{}. The instructor presents the enhanced cards and a set of design goals to the students, who individually redesign the application’s architecture by editing the cards. We approximate the
+feedback from a guest developer both by heuristically estimating,
+updating, and tracking effort and code metrics incurred by changes
+and by highlighting changes that may break the application.
+This system allows the instructor to focus on moderating discus-
+sion and teaching design. After some redesigning, students return
+to their teams to discuss their solutions. With instructor oversight,
+teams will assemble, refine, and pitch a single solution as a Request
+For Change (RFC), referencing estimated effort, altered metrics, and
+rejected design choices in their write-up.
+In short, the system is an enhancement of an existing design aid
+that enforces the rules to a collaborative serious game. As such,
+it does not grade student designs, instead deferring to instructors
+to provide design goals and situational context that will be used
+in evaluating teams’ write-ups (e.g. “The system needs a patch
+ASAP. Minimize required effort.” or “Redesign without changing
+functionality; mind the metrics.”). By the activity’s end, the students
+will have practiced all the design skills necessary for a months-long
+cycle of software development, without any students or instructors
+manually managing any implementation details.
+

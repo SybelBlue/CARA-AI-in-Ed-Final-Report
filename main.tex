@@ -1,0 +1,92 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+
+
+ % a macro I (nelson) like using:
+\newcommand{\todo}[1]{\PackageError{TODO}{Unresolved: #1}{}}
+% use as: \todo{Make sure to resolve all todos before submitting camera-ready!}
+
+\begin{document}
+%
+\title{CARA: Scaffolding Collaborative Software Design with Serious Games}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{
+Serena Caraco\inst{1}\orcidID{0009-0007-4411-6610} \and
+Nelson Lojo\inst{1}\orcidID{0009-0002-7624-9323} \and
+Melissa Fabros\inst{1}\orcidID{0009-0001-2820-174X} \and
+Armando Fox\inst{1}\orcidID{0000-0002-6096-4931}
+}
+%
+\authorrunning{S. Caraco et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{University of California, Berkeley, Berkeley CA 94720, USA \\
+\email{caraco@berkeley.edu}
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+\input{sections/introduction}
+
+\section{Methodology}
+\input{sections/methodology}
+
+
+\begin{credits}
+\subsubsection{\ackname} \todo{A bold run-in heading in small font size at the end of the paper is used for general acknowledgments, for example: This study was funded by X (grant number Y).}
+
+\subsubsection{\discintname}
+\todo{
+It is now necessary to declare any competing interests or to specifically
+state that the authors have no competing interests. Please place the
+statement with a bold run-in heading in small font size beneath the
+(optional) acknowledgments\footnote{If EquinOCS, our proceedings submission
+system, is used, then the disclaimer can be provided directly in the system.},
+for example: The authors have no competing interests to declare that are
+relevant to the content of this article. Or: Author A has received research
+grants from Company W. Author B has received a speaker honorarium from
+Company X and owns stock in Company Y. Author C is a member of committee Z.
+}
+\end{credits}
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{main}
+%
+
+\end{document}
